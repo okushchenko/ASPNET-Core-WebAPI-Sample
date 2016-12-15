@@ -2,7 +2,6 @@
 version: '1.0.0-b{build}'
 
 configuration:
-  - Debug
   - Release
 
 platform: Any CPU
@@ -14,10 +13,10 @@ before_build:
   - appveyor-retry dotnet restore -v Minimal
 
 build_script:
-  - dotnet build "src\*" -c %CONFIGURATION% --no-dependencies
+  - dotnet build "src\SampleWebApiAspNetCore" -c %CONFIGURATION% --no-dependencies
 
 after_build:
-  - dotnet publish "src\*" -c %CONFIGURATION% --no-build --version-suffix b%APPVEYOR_BUILD_NUMBER% -o artifacts
+  - dotnet publish "src\SampleWebApiAspNetCore" -c %CONFIGURATION% --no-build --version-suffix b%APPVEYOR_BUILD_NUMBER% -o "artifacts\SampleWebApiAspNetCore"
 
 artifacts:
   - path: artifacts\**\*.*
