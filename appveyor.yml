@@ -23,3 +23,15 @@ artifacts:
 
 cache:
   - '%USERPROFILE%\.nuget\packages'
+
+build:
+  publish_wap: true
+
+deploy:
+  - provider: WebDeploy
+    server: http://websitezz4rsd3bbmqha.azurewebsites.net/
+    website: websitezz4rsd3bbmqha
+    username: ok-deploy
+    password:
+      secure: MBRjbxvDb/L+8o7AXene8A==
+    aspnet_core: true
