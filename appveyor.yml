@@ -29,9 +29,10 @@ build:
 
 deploy:
   - provider: WebDeploy
-    server: http://websitezz4rsd3bbmqha.scm.azurewebsites.net/
+    server: https://websitezz4rsd3bbmqha.scm.azurewebsites.net/msdeploy.axd?site=webSitezz4rsd3bbmqha
     website: webSitezz4rsd3bbmqha
     username: ok-deploy
     password:
       secure: MBRjbxvDb/L+8o7AXene8A==
     aspnet_core: true
+    ntlm: false
