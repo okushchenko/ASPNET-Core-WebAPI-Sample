@@ -24,9 +24,6 @@ artifacts:
 cache:
   - '%USERPROFILE%\.nuget\packages'
 
-build:
-  publish_wap: true
-
 deploy:
   - provider: WebDeploy
     server: https://websitezz4rsd3bbmqha.scm.azurewebsites.net/msdeploy.axd?site=webSitezz4rsd3bbmqha
