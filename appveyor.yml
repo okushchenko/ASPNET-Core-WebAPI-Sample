@@ -16,7 +16,7 @@ build_script:
   - dotnet build "src\SampleWebApiAspNetCore" -c %CONFIGURATION% --no-dependencies
 
 after_build:
-  - dotnet publish "src\SampleWebApiAspNetCore" -c %CONFIGURATION% --no-build --version-suffix b%APPVEYOR_BUILD_NUMBER% -o "..\..\artifacts\SampleWebApiAspNetCore"
+  - dotnet publish "src\SampleWebApiAspNetCore" -c %CONFIGURATION% --no-build --version-suffix b%APPVEYOR_BUILD_NUMBER% -o "C:\projects\aspnet-core-webapi-sample\artifacts\SampleWebApiAspNetCore"
 
 artifacts:
   - path: artifacts\SampleWebApiAspNetCore
