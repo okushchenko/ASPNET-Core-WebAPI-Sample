@@ -26,8 +26,8 @@ cache:
 
 deploy:
   - provider: WebDeploy
-    server: https://websitezz4rsd3bbmqha.scm.azurewebsites.net/msdeploy.axd?site=webSitezz4rsd3bbmqha
-    website: webSitezz4rsd3bbmqha
+    server: https://website2n3vycsuh7w4m.azurewebsites.net/msdeploy.axd?site=website2n3vycsuh7w4m
+    website: website2n3vycsuh7w4m
     username: ok-deploy
     password:
       secure: MBRjbxvDb/L+8o7AXene8A==
