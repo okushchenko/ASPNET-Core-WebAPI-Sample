@@ -35,4 +35,5 @@ deploy:
     password:
       secure: MBRjbxvDb/L+8o7AXene8A==
     aspnet_core: true
+    aspnet_core_force_restart: true
     ntlm: false
