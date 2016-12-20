@@ -19,7 +19,7 @@ after_build:
   - dotnet publish "src\SampleWebApiAspNetCore" -c %CONFIGURATION% --no-build --version-suffix b%APPVEYOR_BUILD_NUMBER% -o "artifacts\SampleWebApiAspNetCore"
 
 artifacts:
-  - path: artifacts\**\*.*
+  - path: artifacts\SampleWebApiAspNetCore
 
 cache:
   - '%USERPROFILE%\.nuget\packages'
